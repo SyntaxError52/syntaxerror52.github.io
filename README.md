@@ -1,1 +1,2 @@
-# syntaxerror52.github.io
+## It's just my personal website
+Simple development
