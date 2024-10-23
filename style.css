@@ -3,8 +3,10 @@
 /*Animations*/
 @keyframes rotate {
     0% {transform: rotate3d(1, 1, 1, 0deg);}
-    50% {transform: rotate3d(1, 1, 1, 1deg);}
-    100% {transform: rotate3d(1, 1, 1, -1deg);}
+    25% {transform: rotate3d(1, 1, 1, 1deg);}
+    50% {transform: rotate3d(1, 1, 1, 0deg);}
+    75% {transform: rotate3d(1, 1, 1, -1deg);}
+    100% {transform: rotate3d(1, 1, 1, 0deg);}
 }
 
 
