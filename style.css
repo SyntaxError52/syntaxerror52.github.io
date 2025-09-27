@@ -1,57 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face { font-family: Inter; src: url("InterDisplay-Medium.otf"); }
+
+:root {
+/* Stylistic settings for Inter font*/
+font-family: Inter, sans-serif;
+font-feature-settings:
+/*-------- NUMBERS --------*/
+/* Tabular numbers */ "tnum" 1,
+/* Slashed zero */ "zero" 1,
+/* Alternate one */ "cv01" 1,
+/* Flat-top three */ "cv09" 1,
+/* Open four */ "cv02" 1,
+/* Open six */ "cv03" 1,
+/* Open nine */ "cv04" 1,
+/*-------- LETTERS --------*/
+/* Square punctuation */ "ss08" 1,
+/* Discretionary ligatures */ "dlig" 1,
+/* Simplified u */ "cv06" 1,
+/* Capital G with spur */ "cv10" 1,
+/* Single-story a */ "cv11" 1,
+/* Compact t */ "cv13" 1;
+}
+
+* {
+  font-family: Inter;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: "Source Code Pro";
-    background: #d1f6ff;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 5%;
+  background: #111;
 }
 
-h1 {
-    font-size: 3rem;
-    font-weight: 900;
+section {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #444;
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
+.vflex { flex-direction: column; }
+
+.project-box {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 150ms;
+  margin: 5px;
 }
 
-.social-link {
-    text-decoration: none;
-    color: #000000;
-    background-color: #5498b8;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    border: 1px solid black;
-    transition: 500ms;
+.project-box:hover {
+  filter: brightness(125%);
+  scale: 102%;
 }
 
-.social-link:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.project-card {
-    background-color: #65b6db;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-    max-width: 20%;
-    color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    transition: 500ms;
-}
-
-.project-card:hover {
-    scale: 110%;
-}
-
-h3 {
-    margin: 0.2rem;
-    font-size: 1.5rem;
-}
-
-.container {
-    display: flex;
-    gap: 1rem;
+@media screen and (max-width: 400px) {
+  body {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
