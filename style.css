@@ -62,4 +62,9 @@ section {
     padding-left: 5%;
     padding-right: 5%;
   }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
