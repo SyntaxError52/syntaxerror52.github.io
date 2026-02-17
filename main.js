@@ -3,15 +3,15 @@ const splash = document.getElementById("enterScreen");
 
 function enterSite(){
     music.play();
-    splash.textContent = "1";
+    splash.textContent = "Syntax";
     setTimeout(() => {
-        splash.textContent = "2";
+        splash.textContent = "Error";
     }, 900);
     setTimeout(() => {
-        splash.textContent = "3";
+        splash.textContent = "5";
     }, 1800);
     setTimeout(() => {
-        splash.textContent = "4";
+        splash.textContent = "2";
     }, 2700);
     setTimeout(() => {
         splash.style.display = "none";
@@ -26,5 +26,3 @@ function toggleMusic(){
         music.pause();
     }
 };
-
-console.log('just a personal website ;) ... or is it?');

@@ -3,6 +3,16 @@
     font-family: "Inter";
 }
 
+@keyframes backgroundAnimation {
+    from {background-color: #FFF;}
+    to {background-color: #111;}
+}
+
+@keyframes backgroundAnimationSplashColor {
+    from {color: #111;}
+    to {color: #FFF;}
+}
+
 body {
     background-color: #111; 
     color: white;
@@ -12,12 +22,14 @@ body {
 #enterScreen {
     background: #00000000;
     border: none;
-    color: white;
+    color: #FFF;
     font-size: 10rem;
     font-weight: 600;  
     justify-content: center;
     align-items: center;  
     margin: auto;
+    animation-name: backgroundAnimationSplashColor;
+    animation-duration: 5s;
 }
 
 #website {
@@ -70,4 +82,10 @@ a {
 i {
     word-wrap: normal;
     color: #F9F9F9;
+}
+
+hr {
+    border: none;
+    background-color: #444;
+    height: 3px;
 }
