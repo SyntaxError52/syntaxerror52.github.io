@@ -1,22 +1,30 @@
-setInterval(() => {
-    const now = new Date();
-    const utcTime = now.getTime() + (now.getTimezoneOffset() * 60000);
+const music = document.getElementById("bgMusic");
+const splash = document.getElementById("enterScreen");
 
-    const offset = 5.5 * 60 * 60 * 1000; 
-    const gmtPlus530Time = new Date(utcTime + offset);
-    let hours = gmtPlus530Time.getHours();
-    let minutes = gmtPlus530Time.getMinutes();
-    let seconds = gmtPlus530Time.getSeconds();
+function enterSite(){
+    music.play();
+    splash.textContent = "1";
+    setTimeout(() => {
+        splash.textContent = "2";
+    }, 900);
+    setTimeout(() => {
+        splash.textContent = "3";
+    }, 1800);
+    setTimeout(() => {
+        splash.textContent = "4";
+    }, 2700);
+    setTimeout(() => {
+        splash.style.display = "none";
+        document.getElementById("website").style.display = "inline-block";    
+    }, 3600);
+};
 
-    function addLeadingZero(i) {
-        return i < 10 ? "0" + i : i;
+function toggleMusic(){
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
     }
+};
 
-    hours = addLeadingZero(hours);
-    minutes = addLeadingZero(minutes);
-    seconds = addLeadingZero(seconds);
-
-    let currentTime = hours + ":" + minutes + ":" + seconds;
-
-    document.getElementById("time").innerHTML = currentTime;
-}, 1000);
+console.log('just a personal website ;) ... or is it?');

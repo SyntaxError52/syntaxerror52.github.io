@@ -1,70 +1,73 @@
-@font-face { font-family: Inter; src: url("InterDisplay-Medium.otf"); }
-
-:root {
-/* Stylistic settings for Inter font*/
-font-family: Inter, sans-serif;
-font-feature-settings:
-/*-------- NUMBERS --------*/
-/* Tabular numbers */ "tnum" 1,
-/* Slashed zero */ "zero" 1,
-/* Alternate one */ "cv01" 1,
-/* Flat-top three */ "cv09" 1,
-/* Open four */ "cv02" 1,
-/* Open six */ "cv03" 1,
-/* Open nine */ "cv04" 1,
-/*-------- LETTERS --------*/
-/* Square punctuation */ "ss08" 1,
-/* Discretionary ligatures */ "dlig" 1,
-/* Simplified u */ "cv06" 1,
-/* Capital G with spur */ "cv10" 1,
-/* Single-story a */ "cv11" 1,
-/* Compact t */ "cv13" 1;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
-  font-family: Inter;
-  color: white;
-  margin: 0;
-  padding: 0;
+    font-family: "Inter";
 }
 
 body {
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-top: 5%;
-  background: #111;
-}
-
-section {
-  display: flex;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #444;
-}
-
-.vflex { flex-direction: column; }
-
-.project-box {
-  background-color: #222;
-  padding: 15px;
-  border-radius: 15px;
-  transition: 150ms;
-  margin: 5px;
-}
-
-.project-box:hover {
-  filter: brightness(125%);
-  scale: 102%;
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  section {
+    background-color: #111; 
+    color: white;
     display: flex;
-    flex-direction: column;
-  }
+}
 
+#enterScreen {
+    background: #00000000;
+    border: none;
+    color: white;
+    font-size: 10rem;
+    font-weight: 600;  
+    justify-content: center;
+    align-items: center;  
+    margin: auto;
+}
+
+#website {
+    display: none;
+    justify-content: center;
+    align-items: center;  
+    margin: auto;
+    background-color: #222;
+    padding: 4rem;
+    border-radius: 1rem;
+    width: min-content;
+}
+
+#profile {
+    display: flex;
+}
+
+#pfp-image {
+    flex: 1;
+    height: 150;
+    width: 150px;
+    padding: 15px;
+}
+
+#title {
+    flex: 0;
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#toggleM {
+    color: white;
+    background: #333;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+#toggleM:hover {
+    background: #444;
+    scale: 110%;
+}
+
+i {
+    word-wrap: normal;
+    color: #F9F9F9;
 }

@@ -1,52 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="pfp.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-    <title>SyntaxError52</title>
-</head>
-<body>
-    <section>
-        <img src="pfp.png" alt="fpf.gnp" style="flex: 0;" width="200px" height="150px" style="margin: none; padding: 0;">
-        <div class="vflex">
-            <h1 style="flex: 1; font-weight: 200;">SyntaxError52</h1><br>
-            <p style="flex: 1; color: #444;">Co-Founder at <a href="https://github.com/tenclips/" target="_blank" style="text-decoration: none; color: #444;">tenclips</a></p>
-            <p style="flex: 1; color: #444;">Front-End and Python dev</a></p>
-            <p style="flex: 1; color: #444;">"When it feels like living is harder than dying for me giving up is way harder than trying" - Kanye West <u style="flex: 1; color: #444;">Graduation</u></a></p>
-        </div>
-    </section>
-    <section style="padding-top: 15px;">
-        <h1 style="flex: 0; font-weight: 200; padding-right: 30px; padding-top: 15px;">Projects</h1>
-        <div class="vflex">
-            <div class="project-box" style="flex: 1; font-weight: 200;">
-                <h2 style="font-weight: 200;"><a href="https://eaglerplus.x8r.dev/" target="_blank" style="text-decoration: none; color: #fff;">Eaglercraft Extras</a></h2>
-                <p>A collection of Eaglercraft clients, worlds, skins, etc. Collaborated with x8r <br><span style="color: #666">2024 - Still Updating</span></p>
+<html>
+
+    <head>
+        <title>SyntaxError52</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="pfp.png" type="image/x-icon">
+    </head>
+    <body>
+        
+        <button onclick="enterSite()" id="enterScreen">click to enter...</button>
+        
+        <audio src="introsong.mp3" id="bgMusic"></audio>
+        
+        <div id="website">
+            <div id="profile">
+                <img src="pfp.png" id="pfp-image" />
+                <h1 id="title" >SyntaxError52</h1>
             </div>
-            <div class="project-box" style="flex: 1; font-weight: 200;">
-                <h2 style="font-weight: 200;"><a href="https://syntaxerror52.github.io/empire-clicker/" target="_blank" style="text-decoration: none; color: #fff;">Empire Clicker</a></h2>
-                <p>A collection of Eaglercraft clients, worlds, skins, etc. Collaborated with x8r <br><span style="color: #666">April 2024</span></p>
-            </div>
-            <div class="project-box" style="flex: 1; font-weight: 200;">
-                <h2 style="font-weight: 200;"><a href="https://useclassboard.vercel.app/" target="_blank" style="text-decoration: none; color: #fff;">Classboard</a></h2>
-                <p>A simple links hub for students. Collaborated with x8r <br><span style="color: #666">2023 - Original Versions lost (google sites edition) New version undermantianed</span></p>
-            </div>
+            <hr>
+            <p style="color: #888;"> HTML, CSS, JavaScript, Python 3.12</p>
+            <hr>
+            <h1>Projects</h1>
+            <hr>
+            <h2><a href="https://eaglerplus.x8r.dev/ " target="_blank">Eaglercraft</a></h2>
+            <i>An eaglercraft websites with all main clients, servers, resource packs, worlds, and skins! Developed with x8rr in 2024</i>
+            <hr>
+            <h2><a href="https://useclassboard.vercel.app/index.html " target="_blank">Classboard</a></h2>
+            <i>a links hub made with varoius other devs in 2023</i>
+            <hr>
+            <p style="color: #888;">Music: The Fall Off Is Inevitable, J. Cole, Copywright 2026 Cole World Inc.</p>
+            <hr>
+            <button id="toggleM" onclick="toggleMusic()">Start / Pause Music</button>
         </div>
-    </section>
-    <section>
-        <h1 style="flex: 0; font-weight: 200; padding-right: 30px; padding-top: 15px;">Socials</h1>
-        <div class="vflex" style="padding-top: 25px;">
-            <a href="https://www.youtube.com/@syntax.error.history." target="_blank" style="text-decoration: none; color: #fff;">Youtube</a><br>
-            <a href="https://github.com/SyntaxError52/" target="_blank" style="text-decoration: none; color: #fff;">Github</a>
-        </div>
-    </section>
-    <section>
-        <div class="vflex">
-            <h1 style="font-weight: 200; padding-right: 30px; padding-top: 15px; font-size: 1rem; flex: 0;">North Sentinal Island</h1><br>
-            <p style="color: #444; flex: 1;" id="time"></p>
-        </div>
-    </section>
-</body>
+
+    </body>
+
 </html>
+
+<script src="main.js"></script>
